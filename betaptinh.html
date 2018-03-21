@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bé Tập Tính</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>
+			Bé Tập Tính
+		</h1>
+		<div class="row">
+			<div class="col-md-6">
+				
+				
+				<div class="form-group">
+					<div class="input-group">
+					    <div class="input-group-addon">Số thứ nhất</div>
+					    <input class="form-control" id="firstNumber" placeholder="Nhập số, vd: 1, -53,..." data-toggle="tooltip" data-placement="top" title="Không hợp lệ với: a,F,/,@,$,*,...">
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="input-group">
+					   	<div class="input-group-addon" style="padding-right: 20px">Số thứ hai</div>
+					   	<input class="form-control" id="secondNumber" placeholder="Nhập số, vd: 1, -53,..." data-toggle="tooltip" data-placement="top" title="Không hợp lệ với: a,F,/,@,$,*,...">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-6">
+						<input type="radio" id="add" name="row-1" data-col="1" checked="true"><label style="padding-left: 10px; font-size: 20px">Cộng</label>
+					</div>
+					<div class="col-md-6">
+						<input type="radio" id="sub" name="row-1" data-col="2"><label style="padding-left: 10px; font-size: 20px">Trừ</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<input type="radio" id="mul" name="row-2" data-col="1"><label style="padding-left: 10px; font-size: 20px">Nhân</label>
+					</div>
+					<div class="col-md-6">
+						<input type="radio" id="div" name="row-2" data-col="2"><label style="padding-left: 10px; font-size: 20px">Chia</label>
+					</div>
+				</div>
+				
+			</div>
+				
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<div class="input-group">
+					   	<div class="input-group-addon" style="padding-right: 36px">Kết quả</div>
+					<input class="form-control" id="result" placeholder="Kết quả" readonly>
+					</div>
+				</div>
+				<div class="error">
+		          	<h3 style="color: red" id="error"></h3>
+		        </div>
+			</div>
+			<div class="col-md-6">
+				<div >
+					<button type="button" id="btnResult" class="btn btn-success col-md-3"><b>Tính</b></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./calculator.js" ></script>
+</body>
+</html>
